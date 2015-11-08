@@ -8,7 +8,7 @@ Woodpecker is a simple lexical analyzer written in Python used to explain a lexi
 
 Source code
 
-```
+
 <h1 style="color:blue">This is a heading</h1>
 woodpecker inicio
 	variavel senha :
@@ -31,7 +31,7 @@ woodpecker inicio
 		exibir_msg "Login_efetuado_com_suscesso" :
 	}	
 fim
-```
+
 
 Tabela de convenções
 
