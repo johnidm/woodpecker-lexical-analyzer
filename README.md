@@ -35,6 +35,7 @@ fim
 Tabela de convenções
 
 | Azul        | Nome da linguagem de programação – palavra reservada |
+|-------------|------------------------------------------------------|
 | Roxo        | Palavras reservadas                                  |
 | Laranja     | Identificadores (variável ou procedimento)           |
 | Verde       | Constante literal                                    |
