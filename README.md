@@ -8,35 +8,7 @@ Woodpecker is a simple lexical analyzer written in Python used to explain a lexi
 
 Source code
 
-<span style="color:orange;">Word up</span>
-
-```
-woodpecker inicio
-	variavel senha :
-	variavel login :
-	variavel numero :
-	
-	exibir_msg "Esse_ao_meu_primeiro_analisador_léxico" :
-	
-	para numero ate 100 faca
-	{
-		exibir numero :
-	}
-
-	--verificação da senha--
-	senha = 1234 :			
-	login = senha igual 1234 :
-
-	se login
-	{
-		exibir_msg "Login_efetuado_com_suscesso" :
-	}	
-fim
-```
-<p style='color:red'>This is some red text.</p>
-<font color="red">This is some text!</font>
-These are <b style='color:red'>red words</b>.
-
+![source code](woodpecker.language.png)
 
 Tabela de convenções
 
