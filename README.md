@@ -1,3 +1,4 @@
-### woodpecker is a simple lexical analyzer used to explain a lexical conventions on study of compilers.
+#### Woodpecker Lexical Analyzer
 
+woodpecker is a simple lexical analyzer written in Python used to explain a lexical conventions on study of compilers.
 
