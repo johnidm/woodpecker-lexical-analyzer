@@ -1,6 +1,6 @@
 -- Programa que faz login --
 
-johni inicio
+woodpecker inicio
 	variavel senha :
 	variavel login :
 	variavel numero :
