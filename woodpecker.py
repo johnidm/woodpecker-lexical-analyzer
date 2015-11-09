@@ -29,7 +29,7 @@ class Woodpecker():
 		return self
 
 	def tokens(self):
-		tokens = self.source_code.split()
+		tokens = re.split('[ #, #]+', self.source_code) 
 
 		for token in tokens:
 			print('<{}, {}>'.format(token, 'type'))		
