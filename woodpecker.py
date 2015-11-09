@@ -30,6 +30,7 @@ class Woodpecker():
 
 	def tokens(self):
 		tokens = re.split('[ #, #]+', self.source_code) 
+		print re.findall(r'#[^#]*#|\S+', 'mark bill #special# #special method# johni')
 
 		for token in tokens:
 			print('<{}, {}>'.format(token, 'type'))		
