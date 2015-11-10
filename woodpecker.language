@@ -4,8 +4,10 @@ woodpecker inicio
 	variavel senha :
 	variavel login :
 	variavel numero :
+
+	variavel saldo :
 	
-	exibir_msg "Esse_ao_meu_primeiro_analisador_léxico" :
+	exibir_msg #Esse é o meu primeiro analisador léxico# :
 	
 	para numero ate 100 faca
 	{
@@ -16,8 +18,10 @@ woodpecker inicio
 	senha = 1234 :			
 	login = senha igual 1234 :
 
+	saldo = -23.32
+
 	se login
 	{
-		exibir_msg "Login_efetuado_com_suscesso" :
+		exibir_msg #Login efetuado com suscesso# :
 	}	
 fim
