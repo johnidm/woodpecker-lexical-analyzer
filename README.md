@@ -17,7 +17,7 @@ Conventions table
 | Blue    | Names of languages – keyword               |
 | Purple  | Keyword                                    |
 | Orange  | Identifier - procedure                     |
-| Red     | Identifier - variable                      |
+| Cyan    | Identifier - variable                      |
 | Green   | String                                     |
 | Brown   | Integer                                    |
 | Lime    | Float                                      |
