@@ -12,15 +12,20 @@ Source code
 
 Conventions table
 
-| Color       | Description                                          |
-|-------------|------------------------------------------------------|
-| Azul        | Nome da linguagem de programação – palavra reservada |
-| Roxo        | Palavras reservadas                                  |
-| Laranja     | Identificadores (variável ou procedimento)           |
-| Verde       | Constante literal                                    |
-| Azul-claro  | Constante inteira                                    |
-| Vermelho    | Marcador de final de linha                           |
-| Entre -- -- | Entre Comentários                                    |
+| Color   | Description                                |
+|---------|--------------------------------------------|
+| Blue    | Names of languages – keyword               |
+| Purple  | Keyword                                    |
+| Orange  | Identifier - procedure                     |
+| Red     | Identifier - variable                      |
+| Green   | String                                     |
+| Brown   | Integer                                    |
+| Lime    | Float                                      |
+| ------- | Between -- -- is a comment                 |
+| ------- | Left curly bracket - { - start block code  |
+| ------- | Right curly bracket - } - end block code   |
+| ------- | Colon - : - end <keyword> Statement        |
+| ------- | Equal - = - variable assignment statements |
 
 #### Files
 

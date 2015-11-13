@@ -3,7 +3,7 @@ import re
 class Woodpecker():
 
     def __init__(self, filename):
-        self.source_code = self.__read_content_file(filename)
+        self.source_code = self.read_content_file(filename)
         
     def code(self):     
         return self.source_code
@@ -16,31 +16,38 @@ class Woodpecker():
             t, tp = token
             print('<{}, {}>'.format(t, tp), end=' ')
 
-    def __read_content_file(self, filename):
+    def read_content_file(self, filename):
+        
         with open(filename) as f:
             content = f.read()
 
         return content
 
-    def __remove_multiple_spaces(self): 
+    def remove_multiple_spaces(self): 
         DOUBLE_SPACE = ' +'
 
         self.source_code = re.sub(DOUBLE_SPACE, ' ', self.source_code)
-        return self.source_code
+        return self.source_code.strip()
 
-    def __remove_empty_lines(self):
+    def remove_empty_lines(self):
         EMPTY_LINES = '\t|\n|\r'
 
         self.source_code = re.sub(EMPTY_LINES, ' ', self.source_code)
+
         return self.source_code
 
-    def __remove_comment(self):
+    def remove_comment(self):
         COMMENT = '--.*?--'
         
         self.source_code = re.sub(COMMENT, ' ', self.source_code).strip()
         return self.source_code
 
-    def __get_type_token(self, token):
+    def get_type_token(self, token):
+
+        IDT_END_LINE = ":"
+        IDT_START_BLOCK = "{"
+        IDT_END_BLOCK = "}"
+        ASSIGNMENT = "="
 
         def is_integer(s):
             return re.match("[-+]?\d+$", s) is not None
@@ -58,20 +65,28 @@ class Woodpecker():
             return 'integer'
         elif is_float(token):
             return 'float'
+        elif token == IDT_END_LINE:
+            return 'idt-end-line' 
+        elif token == IDT_START_BLOCK:
+            return 'idt-start-block'
+        elif token == IDT_END_BLOCK:
+            return 'idt-end-block'
+        elif token == ASSIGNMENT:
+            return 'assignment'
         else:
             return 'idt'
 
-    def __generate_token(self):
+    def generate_token(self):
 
-        self.__remove_comment()
-        self.__remove_empty_lines()
-        self.__remove_multiple_spaces()
+        self.remove_comment()
+        self.remove_empty_lines()
+        self.remove_multiple_spaces()
 
         list_tokens = re.findall('#[^#]*#|\S+', self.source_code)
 
         tokens = []
         for t in list_tokens:
-            type_token = self.__get_type_token(t)
+            type_token = self.get_type_token(t)
             tokens.append( (t, type_token) ) 
 
         return tokens
