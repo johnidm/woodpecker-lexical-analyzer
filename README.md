@@ -12,20 +12,20 @@ Source code
 
 Conventions table
 
-| Color   | Description                                |
-|---------|--------------------------------------------|
-| Blue    | Names of languages – keyword               |
-| Purple  | Keyword                                    |
-| Orange  | Identifier - procedure                     |
-| Cyan    | Identifier - variable                      |
-| Green   | String                                     |
-| Brown   | Integer                                    |
-| Lime    | Float                                      |
-| ------- | Between -- -- is a comment                 |
-| ------- | Left curly bracket - { - start block code  |
-| ------- | Right curly bracket - } - end block code   |
-| ------- | Colon - : - end <keyword> Statement        |
-| ------- | Equal - = - variable assignment statements |
+| Color   | Description                                                        |
+|---------|--------------------------------------------------------------------|
+| Blue    | Names of languages – keyword                                       |
+| Purple  | Keyword                                                            |
+| Orange  | Identifier - procedure starts with a lowercase or uppercase letter |
+| Cyan    | Identifier - variable starts with a lowercase or uppercase letter  |
+| Green   | String                                                             |
+| Brown   | Integer                                                            |
+| Lime    | Float                                                              |
+| ------- | Between -- -- is a comment                                         |
+| ------- | Left curly bracket - { - start block code                          |
+| ------- | Right curly bracket - } - end block code                           |
+| ------- | Colon - : - end <keyword> Statement                                |
+| ------- | Equal - = - variable assignment statements                         |
 
 #### Files
 
