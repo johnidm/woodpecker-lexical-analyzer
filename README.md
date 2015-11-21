@@ -27,6 +27,16 @@ Conventions table
 | ------- | Colon - : - end <keyword> Statement                                |
 | ------- | Equal - = - variable assignment statements                         |
 
+#### How to use
+
+Run example
+
+`python example.py`
+
+Run tests
+
+`python test_woodpecker.py`
+
 #### Files
 
 `woodpecker.language`: Source code of programming language.
