@@ -23,7 +23,7 @@ class Woodpecker():
 
     def read_content_file(self, filename):
 
-        with open(filename) as f:
+        with open(filename, encoding='utf-8') as f:
             content = f.read()
 
         return content
@@ -87,12 +87,13 @@ class Woodpecker():
         else:
             raise TokenUnrecognized('Token "{}" unrecognized'.format(token))
 
-    def generate_token(self):
+    def generate_tokens(self):
 
         self.remove_comment()
         self.remove_empty_lines()
         self.remove_multiple_spaces()
 
+        # separate strings of the other tokens
         list_tokens = re.findall('#[^#]*#|\S+', self.source_code)
 
         tokens = []
